@@ -10,6 +10,11 @@ sudo apt install curl g++ gcc autoconf automake bison libc6-dev \
         libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev \
         libreadline-dev libssl-dev
 
+echo "[*] Installing libssl1.0-dev"
+sudo echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list
+sudo apt update && apt-cache policy libssl1.0-dev
+sudo apt-get install libssl1.0-dev
+
 echo "[*] Importing keys for rvm"
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
@@ -40,11 +45,6 @@ sudo apt install unzip
 echo "[*] Creating serpico directory"
 unzip 1.3.1.2.zip
 mv Serpico-1.3.1.2.zip serpico
-
-echo "[*] Installing libssl1.0-dev"
-sudo echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list
-sudo apt update && apt-cache policy libssl1.0-dev
-sudo apt-get install libssl1.0-dev
 
 echo "[*] Installing serpico dependencies"
 cd serpico
