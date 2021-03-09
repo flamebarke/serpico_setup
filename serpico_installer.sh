@@ -51,4 +51,5 @@ cd serpico
 bundle install
 ruby scripts/first_time.rb
 
+source ~/.rvm/scripts/rvm
 echo "[*] Install complete to run serpico use the following command >: ruby ./serpico.rb"
