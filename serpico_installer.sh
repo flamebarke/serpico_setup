@@ -25,7 +25,9 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 
 echo "[*] Installing rvm"
 sleep 3
-curl -sSL https://get.rvm.io | bash -s stable 
+curl -sSL https://get.rvm.io | bash -s stable
+
+source ~/.rvm/scripts/rvm
 
 #echo "[*] Adding user to rvm group"
 #sudo usermod -a -G rvm `whoami` 
