@@ -54,4 +54,4 @@ ruby scripts/first_time.rb
 source ~/.rvm/scripts/rvm
 echo "[*] Install complete to run serpico use the following command >: ruby ./serpico.rb"
 
-sudo rm 1.3.1.2.zip
+sudo rm ~/1.3.1.2.zip
