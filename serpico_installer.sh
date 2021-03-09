@@ -11,7 +11,7 @@ sudo apt install curl g++ gcc autoconf automake bison libc6-dev \
         libreadline-dev libssl-dev
 
 echo "[*] Installing libssl1.0-dev"
-sudo echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list
+sudo sh -c 'echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list'
 sudo apt update && apt-cache policy libssl1.0-dev
 sudo apt-get install libssl1.0-dev
 
