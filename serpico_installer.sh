@@ -44,7 +44,7 @@ sudo apt install unzip
 
 echo "[*] Creating serpico directory"
 unzip 1.3.1.2.zip
-mv Serpico-1.3.1.2.zip serpico
+mv Serpico-1.3.1.2 serpico
 
 echo "[*] Installing serpico dependencies"
 cd serpico
