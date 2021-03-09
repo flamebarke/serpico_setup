@@ -52,6 +52,10 @@ bundle install
 ruby scripts/first_time.rb
 
 source ~/.rvm/scripts/rvm
+
+echo ""
+echo ""
+echo "[*] You must run this command from your current shell >: source ~/.rvm/scripts/rvm"
 echo "[*] Install complete to run serpico use the following command >: ruby ./serpico.rb"
 
 sudo rm ~/1.3.1.2.zip
