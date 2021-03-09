@@ -42,7 +42,7 @@ unzip 1.3.1.2.zip
 mv Serpico-1.3.1.2.zip serpico
 
 echo "[*] Installing libssl1.0-dev"
-sudo echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list"
+sudo echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list
 sudo apt update && apt-cache policy libssl1.0-dev
 sudo apt-get install libssl1.0-dev
 
