@@ -11,13 +11,13 @@ sleep 3
 sudo apt install curl g++ gcc autoconf automake bison libc6-dev \
         libffi-dev libgdbm-dev libncurses5-dev libsqlite3-dev libtool \
         libyaml-dev make pkg-config sqlite3 zlib1g-dev libgmp-dev \
-        libreadline-dev libssl-dev 
+        libreadline-dev libssl-dev -y
 
 echo "[*] Installing libssl1.0-dev"
 sleep 3
 sudo sh -c 'echo "deb http://security.ubuntu.com/ubuntu bionic-security main" >> /etc/apt/sources.list' 
 sudo apt update && apt-cache policy libssl1.0-dev 
-sudo apt-get install libssl1.0-dev 
+sudo apt-get install libssl1.0-dev -y
 
 echo "[*] Importing keys for rvm"
 sleep 3
